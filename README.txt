@@ -1,0 +1,36 @@
+=== WP Facebook Like Button ===
+Contributors: vivacityinfotech.jaipur
+Donate link: http://bit.ly/1icl56K
+Tags: WooCommerce Social Buttons, Facebook share button, linkedin share button, twitter share button, google plus share button, share button for vertical, share button for horizontal.
+Requires at least:3.5
+Tested up to:4.1.1
+Stable tag: 1.9
+License: GPLv2 or later
+
+== Description ==
+
+A simple plugin to add most popular social like+share buttons to your Woocommerce store products.
+
+You can also customize setting for following features:
+
+* You can hide /show social share button on posts/product detail page.
+* You can set social share button vertical and horizontal.
+* You can add social share button facebook,google plus, linkedin share button, twitter share button.
+
+= Rate Us / Feedback =
+
+Please take the time to let us and others know about your experiences by leaving a review, so that we can improve the plugin for you and other users.
+
+= Want More? =
+
+If You Want more functionality or some modifications, just drop us a line what you want and We will try to add or modify the plugin functions.
+
+If you like the plugin please [Donate here](http://bit.ly/1icl56K). 
+
+== Installation ==
+
+
+1. Download the Wp facebook Like Button Plugin.(woocommerce-social-buttons zip file).
+2. Extract it in the '/wp-content/plugins/' directory.
+3. Activate the plugin through the 'Plugins' menu in WordPress.
+
