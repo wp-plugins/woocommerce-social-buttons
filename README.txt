@@ -1,7 +1,7 @@
-=== WP Facebook Like Button ===
+=== Woocommerce Social Buttons ===
 Contributors: vivacityinfotech.jaipur
 Donate link: http://bit.ly/1icl56K
-Tags: WooCommerce Social Buttons, Facebook share button, linkedin share button, twitter share button, google plus share button, share button for vertical, share button for horizontal.
+Tags: Woocommerce Social Buttons, Facebook share button, linkedin share button, twitter share button, Google plus share button with option of  vertical or horizontal view.
 Requires at least:3.5
 Tested up to:4.1.1
 Stable tag: 1.9
