@@ -3,8 +3,8 @@ Contributors: vivacityinfotech.jaipur
 Donate link: http://bit.ly/1icl56K
 Tags: Woocommerce Social Buttons, Facebook share button, linkedin share button, twitter share button, Google plus share button with option of  vertical or horizontal view.
 Requires at least:3.5
-Tested up to:4.1.1
-Stable tag: 1.9
+Tested up to:4.2.1
+Stable tag: 1.0
 License: GPLv2 or later
 
 == Description ==
