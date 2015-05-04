@@ -1,8 +1,8 @@
 <?php
 /* Plugin Name: WooCommerce Social Buttons
- * Plugin URI: http://www.vivacityinfotech.net
- * Description: A simple plugin to add most popular social like+share buttons to your Woocommerce store products.
- * Version: 1.0.0
+ * Plugin URI: http://www.vivacityinfotech.net 
+ * Description: A simple plugin to add most popular social like+share buttons to your Woocommerce store products and you can use shortcode [woocommerce_social_buttons]. 
+ * Version: 1.0.1
  * Author: Vivacity Infotech Pvt. Ltd.
  * Author URI: http://www.vivacityinfotech.net
   Text Domain: woocommerce-social-buttons
@@ -83,9 +83,37 @@ function va_wc_sh_form_code() {
     echo $social_val;
 }
 
-add_shortcode('woocommerce_social_buttons', 'va_wc_sh_form_code');
-add_action('woocommerce_after_single_product_summary', 'va_wc_sh_form_code');
+
+function va_wc_sh_form_short_code() {
+    global $post;
+    $social_val = '';
+    
+        if (get_option('va_share_like_fb') == 'true') {
+            $social_val.='<span class="fb-share-button" data-href="' . get_permalink($post->ID) . '" data-layout="button_count"></span>';
+        }
+        if (get_option('va_share_like_gp') == 'true') {
+            $social_val.='<span class="g-plus" data-action="share" data-annotation="bubble" data-href="' . get_permalink($post->ID) . '"></span>';
+        }
+        if (get_option('va_share_like_li') == 'true') {
+            $social_val.='<span><script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+                          <script type="IN/Share" data-counter="right"></script></span>';
+        }
+        if (get_option('va_share_like_tw') == 'true') {
+            $social_val.='<span><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></span></div>';
+        }
+   
+    
+    echo $social_val;
+}
+
+
+add_shortcode('woocommerce_social_buttons', 'va_wc_sh_form_short_code');
+add_action('woocommerce_single_product_summary', 'va_wc_sh_form_code', 31);
 add_action('admin_menu', 'va_wc_sh_social_menu');
+add_action('wp_footer', 'va_wc_sh_social_footer');
+function va_wc_sh_social_footer() {
+    echo "<style type='text/css'>.fb_iframe_widget > span {display: table !important;}</style>";
+}
 
 function va_wc_sh_social_menu() {
     add_menu_page('Woocommerce Social Page', 'Share Panel', 'manage_options', 'Woocommerce-social-plugin', 'va_wc_sh_social_facebook_init', plugins_url('/images/fb_16.png', __FILE__));
