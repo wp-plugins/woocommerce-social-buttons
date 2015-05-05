@@ -1,7 +1,7 @@
 === Woocommerce Social Buttons ===
 Contributors: vivacityinfotech.jaipur
 Donate link: http://bit.ly/1icl56K
-Tags: Woocommerce Social Buttons, Facebook share button, linkedin share button, twitter share button, Google plus share button with option of  vertical or horizontal view.
+Tags: Woocommerce Social Buttons, Facebook share button, linkedin share button, twitter share button, Google plus, share button, vertical,  horizontal, woocommerce like buttons.
 Requires at least:3.5
 Tested up to:4.2.1
 Stable tag: 1.0.1
@@ -19,7 +19,7 @@ You can also customize setting for following features:
 * You can set social share button vertical and horizontal.
 * You can add social share button facebook,google plus, linkedin share button, twitter share button.
 * You can also use shortcode for page, post, events, product. Example : for editor use this  shortcode [woocommerce_social_buttons].
-* you can use for template. Example : <?php echo do_shortcode( '[woocommerce_social_buttons]' ); ?>
+* you can use for template. Example : [code]<?php echo do_shortcode( '[woocommerce_social_buttons]' ); ?>[/code]
 
 == Screenshots ==
 
