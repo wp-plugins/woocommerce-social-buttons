@@ -7,6 +7,7 @@ Requires at least:3.5
 Tested up to:4.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Stable tag: 1.0.2
 
 The Woocommerce Social Buttons plugin most used share product on the web. You can use this plgin for: posts, pages, products , events.
 
