@@ -2,7 +2,7 @@
 /* Plugin Name: WooCommerce Social Buttons
  * Plugin URI: http://www.vivacityinfotech.net 
  * Description: A simple plugin to add most popular social like+share buttons to your Woocommerce store products and you can use shortcode [woocommerce_social_buttons]. 
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Vivacity Infotech Pvt. Ltd.
  * Author URI: http://www.vivacityinfotech.net
   Text Domain: woocommerce-social-buttons
