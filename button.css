@@ -1,0 +1,54 @@
+
+
+    .social-media-icons {
+        display: block;
+        height: 25px;
+        width: 100%;
+        margin: 0 0 10px;
+        padding: 0;
+    }
+
+    .facebook-button,
+    .facebook-button-rec,
+    .twitter-button,
+    .gplus-button,   
+    .linkedin-button
+   {
+        float: left;
+    }
+
+     
+
+    
+    .youtube-button {
+        width: 100px;
+        margin-bottom: 5px;
+    }
+    
+     .facebook-button
+    {
+        width: 90px;
+        margin-bottom: 5px;
+    }
+
+  
+    .gplus-button  
+
+    {
+        width: 90px;
+        margin-top: -10px;
+    }
+    .twitter-button{ margin-top: 2px;
+                     width: 80px;}
+    
+
+    .linkedin-button,    
+    .tumblr-button,
+    .wanelo-button    
+    {
+        width:65px;
+        margin-bottom: 5px;
+    }
+   
+    
+  
