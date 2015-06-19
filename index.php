@@ -86,24 +86,25 @@ function va_wc_sh_form_code() {
 
 function va_wc_sh_form_short_code() {
     global $post;
-    $social_val = '';
-    
-        if (get_option('va_share_like_fb') == 'true') {
-            $social_val.='<span class="fb-share-button" data-href="' . get_permalink($post->ID) . '" data-layout="button_count"></span>';
-        }
-        if (get_option('va_share_like_gp') == 'true') {
-            $social_val.='<span class="g-plus" data-action="share" data-annotation="bubble" data-href="' . get_permalink($post->ID) . '"></span>';
-        }
-        if (get_option('va_share_like_li') == 'true') {
-            $social_val.='<span><script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-                          <script type="IN/Share" data-counter="right"></script></span>';
-        }
-        if (get_option('va_share_like_tw') == 'true') {
-            $social_val.='<span><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></span></div>';
-        }
+   $social_val = '<div class="social-media-icons">';
+    if (get_option('va_share_like_fb') == 'true') {
+        $social_val.='<div class="facebook-button"><div class="fb-share-button" data-href="' . get_permalink($post->ID) . '" data-layout="button_count"></div></div>';
+    }
+    if (get_option('va_share_like_gp') == 'true') {
+        $social_val.='<div class="gplus-button"><div  class="g-plus" data-action="share" data-annotation="bubble" data-href="' . get_permalink($post->ID) . '"></div></div>';
+    }
+    if (get_option('va_share_like_li') == 'true') {
+        $social_val.='<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+                          <div class="linkedin-button"><script type="IN/Share" data-url="' . get_permalink($post->ID) . '" data-counter="right"></script></div>';
+    }
+    if (get_option('va_share_like_tw') == 'true') {
+        $social_val.='<div class="twitter-button"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></div>';
+    }
    
+    $social_val .= '</div>';
+
     
-    echo $social_val;
+   return $social_val;
 }
 
 
@@ -274,4 +275,11 @@ function va_wc_sh_my_enqueue() {
 }
 
 add_action('wp_print_scripts', 'va_wc_sh_my_enqueue');
+
+function woocommerce_social_scripts_frontend() {
+    wp_register_style('foo-styles', plugin_dir_url(__FILE__) . 'button.css');
+    wp_enqueue_style('foo-styles');
+}
+
+add_action('wp_enqueue_scripts', 'woocommerce_social_scripts_frontend');
 ?>

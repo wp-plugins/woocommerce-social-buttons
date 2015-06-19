@@ -70,6 +70,10 @@ Answer to product share.
 
 we have added ShortCode for template page and post.
 
+= 1.0.2 =
+
+we have added ShortCode for single post.
+
 
 
 
